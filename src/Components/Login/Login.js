@@ -20,7 +20,7 @@ const Login = () => {
       <div>
         <h1 className="p">Please Login</h1>
       </div>
-      <Form className="container length ">
+      {/* <Form className="container length ">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className="font">Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -29,16 +29,16 @@ const Login = () => {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label className="font">Password</Form.Label>
           <Form.Control type="password " placeholder="Password" />
-        </Form.Group>
-        <Button variant="dark" type="submit">
+        </Form.Group> */}
+      {/* <Button variant="dark" type="submit">
           Submit
         </Button>
         <br />
         <br />
-        <Button variant="dark" type="submit" onClick={handleGoogleSignIn}>
-          Google Sign in
-        </Button>
-      </Form>
+      </Form> */}
+      <Button variant="dark" type="submit" onClick={handleGoogleSignIn}>
+        Google Sign in
+      </Button>
     </div>
   );
 };

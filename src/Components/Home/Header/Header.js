@@ -4,10 +4,18 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import "./Header.css";
 import "animate.css";
 import { Link } from "react-router-dom";
+import useAuth from "../../../Hook/useAuth";
 const Header = () => {
+  const { user } = useAuth();
+  console.log(user);
   return (
     <div>
-      <Navbar bg="primary" variant="dark" sticky="top">
+      <Navbar
+        bg="primary"
+        variant="dark"
+        sticky="top"
+        className="d-flex align-items-center"
+      >
         <Container>
           {/* <Navbar.Brand href="#home">City Hospital</Navbar.Brand> */}
           <Navbar.Toggle />
@@ -26,6 +34,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/login">
                 Login
               </Nav.Link>
+              <Nav.Link>{user?.email && <p>{user?.displayName}</p>}</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

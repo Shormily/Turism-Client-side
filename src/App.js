@@ -7,28 +7,31 @@ import Services from "./Components/Home/Services/Services";
 import Footer from "./Components/Home/Footer/Footer";
 // import Login from "./Components/Login/login";
 import Login from "./Components/Login/Login";
+import AuthProvider from "./Components/contexts/AuthProvider";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/Aboutus">
-            <AboutUS></AboutUS>
-          </Route>
-          <Route exact path="/services">
-            <Services></Services>
-          </Route>
-          <Route exact path="/login">
-            <Login></Login>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/Aboutus">
+              <AboutUS></AboutUS>
+            </Route>
+            <Route exact path="/services">
+              <Services></Services>
+            </Route>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
