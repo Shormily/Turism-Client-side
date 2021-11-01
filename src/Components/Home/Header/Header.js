@@ -40,6 +40,11 @@ const Header = () => {
                   My Orders
                 </Nav.Link>
               )}
+              {user?.email && (
+                <Nav.Link as={Link} to="/addService">
+                  Add service
+                </Nav.Link>
+              )}
 
               <Nav.Link>{user?.email && <p>{user?.displayName}</p>}</Nav.Link>
 
