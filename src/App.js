@@ -10,6 +10,9 @@ import Login from "./Components/Login/Login";
 import AuthProvider from "./Components/contexts/AuthProvider";
 import SingleService from "./Components/SingleService/SingleService";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import ManageAllOrder from "./Components/ManageAllOrders/ManageAllOrder";
+import MyOrders from "./Components/MyOrders/MyOrders";
+import UpdateStatus from "./Components/ManageAllOrders/UpdateStatus/UpdateStatus";
 // import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
 function App() {
@@ -30,6 +33,15 @@ function App() {
             </Route>
             <PrivateRoute exact path="/services/:id">
               <SingleService></SingleService>
+            </PrivateRoute>
+            <PrivateRoute exact path="/manageAllOrders">
+              <ManageAllOrder></ManageAllOrder>
+            </PrivateRoute>
+            <PrivateRoute exact path="/update/:id">
+              <UpdateStatus></UpdateStatus>
+            </PrivateRoute>
+            <PrivateRoute exact path="/myOrders">
+              <MyOrders></MyOrders>
             </PrivateRoute>
             <Route exact path="/login">
               <Login></Login>

@@ -30,19 +30,30 @@ const Header = () => {
               <Nav.Link as={Link} to="/services">
                 Services
               </Nav.Link>
+              {user?.email && (
+                <Nav.Link as={Link} to="/manageAllOrders">
+                  Manage All Orders
+                </Nav.Link>
+              )}
+              {user?.email && (
+                <Nav.Link as={Link} to="/myOrders">
+                  My Orders
+                </Nav.Link>
+              )}
+
+              <Nav.Link>{user?.email && <p>{user?.displayName}</p>}</Nav.Link>
 
               {user?.email ? (
-                <Nav.Link>
+                <Nav.Link className="ms-auto">
                   <Button className="log" onClick={logOut}>
                     Logout
                   </Button>
                 </Nav.Link>
               ) : (
-                <Nav.Link as={Link} to="/login">
+                <Nav.Link className="ms-auto" as={Link} to="/login">
                   Login
                 </Nav.Link>
               )}
-              <Nav.Link>{user?.email && <p>{user?.displayName}</p>}</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
