@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Ahsan Manzil",
+    "description": "Located in the capital city of Dhaka, the capital of Bangladesh, the building was built by the French in the last years of the 19th century.  Be sure to visit this pink building on the banks of the Buriganga River.",
+    "img": "https://www.mappr.co/wp-content/uploads/2021/02/image-31.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Lalbagh Fort",
+    "description": "Located in the east of Dhaka, the capital city of Bangladesh, this fortress was founded in 1677 by Bengal prime Mohammad  In addition, the country has become the biggest castle feature.",
+    "img": "https://www.mappr.co/wp-content/uploads/2021/02/image-32.jpeg"
+  },
+
+  {
+    "id": 4,
+    "name": "Bangladesh National Museum",
+    "description": "Located in the Shanbag district of Dhaka, the capital of Bangladesh, this museum opened its doors in 1913 as a Dakka Museum. Visit our Bangladesh National Museum ",
+    "img": "https://www.mappr.co/wp-content/uploads/2021/02/image-34.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "National Martyrs’ Memorial",
+    "description": "National Martyrs’ Memorial, located in Dhaka, capital of Bangladesh, was built in 1982 by architect Syed Mainul Hossain. This monument, which is 46 meters high. This monument was built for the martyrs who lost their lives in the War of Independence in Bangladesh.",
+    "img": "https://www.mappr.co/wp-content/uploads/2021/02/image-35.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Sixty Dome Mosque",
+    "description": "Located in Bagerhat, Bangladesh, this mosque belongs to the 15th century. Furthermore, it is the largest historical camisole in the country. For this reason, it is an important structure and visited by many people every year. Its other name is Shait Gumbad Mosque.",
+    "img": "https://www.mappr.co/wp-content/uploads/2021/02/image-36.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Armenian Church",
+    "description": "Located in Dhaka, the capital of Bangladesh, this church belongs to the 17th century. Today, almost no Armenians exist in this country. But in the 17th and 18th centuries, thousands of Armenians lived here on the Iranian side lived. please visit our Bangladesh",
+    "img": "https://www.mappr.co/wp-content/uploads/2021/02/image-37.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Shishu Park",
+    "description": "Located in Dhaka, the capital of Bangladesh, this park was the first children’s and amusement park opened in 1979 on a 15-acre site. For this reason, Bangladesh has passed into history as an important place. This park can accommodate about 6,000 people.",
+    "img": "https://www.mappr.co/wp-content/uploads/2021/02/image-38.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Khulna",
+    "description": "It is home to many historic buildings and natural beauty with the property of becoming the 3rd biggest city of Khulna. Visit Mongla Harbor and Sundarban Park (the natural habitat of the Bengal tiger and the world’s largest mangrove forest) located here.",
+    "img": "https://www.mappr.co/wp-content/uploads/2021/02/image-39.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Chittagong",
+    "description": "Chittagong is of great importance for Bangladesh’s second largest city and at the same time as the main port city. Furthermore, built on the estuary of the Karnaphuli River, this city has a population of about 6.5 million. Be sure to visit this region close to Myanmar country.",
+    "img": "https://www.mappr.co/wp-content/uploads/2021/02/image-40.jpeg"
+  }
+]

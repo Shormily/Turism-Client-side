@@ -1,0 +1,30 @@
+/* * {
+  background: linear-gradient(
+    90deg,
+    rgba(83, 91, 221, 0.9727241238292192) 36%,
+    rgba(91, 154, 252, 1) 78%,
+    rgba(20, 21, 203, 0.8634804263502276) 100%
+  ); */
+
+.length {
+  margin-top: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(83, 91, 221, 0.9727241238292192) 36%,
+    rgba(91, 154, 252, 1) 78%,
+    rgba(20, 21, 203, 0.8634804263502276) 100%
+  );
+  padding: 60px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.p {
+  font-size: 50px;
+  color: #340e66;
+  font-style: italic;
+  margin-top: 40px;
+}
+.font {
+  font-size: 25px;
+}
