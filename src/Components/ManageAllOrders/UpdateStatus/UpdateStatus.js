@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 const UpdateStatus = () => {
   const { id } = useParams();
   const [order, setOrder] = useState({});
+  const history = useHistory();
   useEffect(() => {
     fetch(`https://rocky-harbor-85366.herokuapp.com/orders/${id}`)
       .then((res) => res.json())
@@ -23,8 +24,8 @@ const UpdateStatus = () => {
         .put(`https://rocky-harbor-85366.herokuapp.com/orders/${id}`, order)
         .then((result) => {
           if (result.data?.modifiedCount > 0) {
-            //   history.push(redirectUrl);
             alert("Approved");
+            history.push(`/manageAllOrders`);
           }
         });
     }
