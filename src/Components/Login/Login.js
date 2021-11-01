@@ -4,16 +4,27 @@ import { Form, Button } from "react-bootstrap";
 import "./Login.css";
 import initializeAuthentication from "../Firebase/firebase.init";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useHistory, useLocation } from "react-router-dom";
+import useAuth from "../../Hook/useAuth";
 
-initializeAuthentication();
-const provider = new GoogleAuthProvider();
+// initializeAuthentication();
+// const provider = new GoogleAuthProvider();
 const Login = () => {
+  const { setIsLoading, signInWithGoogle } = useAuth();
+  const history = useHistory();
+  const location = useLocation();
+  const redriect_uri = location.state?.from || "/";
+
   const handleGoogleSignIn = () => {
-    const auth = getAuth();
-    signInWithPopup(auth, provider).then((result) => {
-      const user = result.user;
-      console.log(user);
-    });
+    // const auth = getAuth();
+    // signInWithPopup(auth, provider)
+    signInWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        history.push(redriect_uri);
+      })
+      .finally(() => setIsLoading(false));
   };
   return (
     <div>

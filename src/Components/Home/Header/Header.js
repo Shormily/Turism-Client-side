@@ -1,12 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import "./Header.css";
 import "animate.css";
 import { Link } from "react-router-dom";
 import useAuth from "../../../Hook/useAuth";
 const Header = () => {
-  const { user } = useAuth();
+  const { user, logOut } = useAuth();
   console.log(user);
   return (
     <div>
@@ -31,9 +31,17 @@ const Header = () => {
                 Services
               </Nav.Link>
 
-              <Nav.Link as={Link} to="/login">
-                Login
-              </Nav.Link>
+              {user?.email ? (
+                <Nav.Link>
+                  <Button className="log" onClick={logOut}>
+                    Logout
+                  </Button>
+                </Nav.Link>
+              ) : (
+                <Nav.Link as={Link} to="/login">
+                  Login
+                </Nav.Link>
+              )}
               <Nav.Link>{user?.email && <p>{user?.displayName}</p>}</Nav.Link>
             </Nav>
           </Navbar.Collapse>

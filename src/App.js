@@ -8,6 +8,9 @@ import Footer from "./Components/Home/Footer/Footer";
 // import Login from "./Components/Login/login";
 import Login from "./Components/Login/Login";
 import AuthProvider from "./Components/contexts/AuthProvider";
+import SingleService from "./Components/SingleService/SingleService";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+// import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
             <Route exact path="/services">
               <Services></Services>
             </Route>
+            <PrivateRoute exact path="/services/:id">
+              <SingleService></SingleService>
+            </PrivateRoute>
             <Route exact path="/login">
               <Login></Login>
             </Route>
